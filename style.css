@@ -1,0 +1,211 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 60%;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+/* HEADER */
+
+.nav__bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__logo {
+  padding: 30px 0px;
+}
+
+.logo {
+  color: black;
+  font-weight: bold;
+}
+
+.nav__bar__links {
+  display: flex;
+  text-align: center;
+}
+
+.nav__bar__items {
+  padding: 30px 0px 30px 20px;
+  font-weight: 500;
+}
+
+/* DISPLAY GRID */
+
+.container__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.main__content {
+  grid-column: 1 / 6;
+  grid-row: 1 / 4;
+}
+
+.latest__space {
+  grid-column: 1 / 2;
+  grid-row: 5 / 6;
+}
+
+.popular {
+  grid-column: 2 / 4;
+  grid-row: 5 / 6;
+  height: 800px;
+}
+
+.video {
+  grid-column: 1 / 2;
+  grid-row: 6 / 6;
+}
+
+.more__content {
+  grid-column: 1 / 6;
+  grid-row: 8/ 9;
+}
+
+/* MAIN CONTENT */
+
+.main__content {
+  background-image: url("img/space-station.png");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 20px;
+}
+
+.main__content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.main__content p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* TITLES */
+
+.titles {
+  margin-top: 70px;
+}
+
+/* CARDS */
+
+.card {
+  max-width: 280px;
+  margin-bottom: 100px;
+  margin-right: 50px;
+}
+
+.card__info {
+  padding-left: 2px;
+}
+
+.card__title {
+  font-weight: bold;
+  padding: 2px 0px;
+}
+
+.card__descrip {
+  color: rgb(71, 71, 71);
+}
+
+.card__aside {
+  max-width: 550px;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.card__info__aside {
+  padding-left: 15px;
+  color: rgb(71, 71, 71);
+  font-weight: bold;
+}
+
+.mini__info {
+  background-image: url("img/mini-info.png");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 200px;
+  max-width: 430px;
+  padding: 150px 0px 0px 10px;
+  margin-bottom: 20px;
+}
+
+.img__flyer {
+  max-width: 99.6%;
+}
+
+video {
+  max-width: 590px;
+  margin-left: 25px;
+}
+
+.more__content {
+  background-image: url("img/astronaut-space.png");
+  background-size: contain;
+  background-position: center;
+  color: white;
+  padding-top: 420px;
+  padding-left: 20px;
+  height: 500px;
+  margin-bottom: 100px;
+}
+
+/* SECTION LASTEST SPACE NEWS */
+
+.latest__space {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* FOOTER */
+
+.container__grid__footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: auto;
+  text-align: center;
+}
+
+.container__grid__footer p {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.container__grid__footer ul li {
+  padding-bottom: 10px;
+  color: rgb(71, 71, 71);
+}
+
+/* PROFILE */
+
+.profile {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px 10px 0px;
+}
+
+.profile a {
+  color: black;
+  text-decoration: underline;
+}
